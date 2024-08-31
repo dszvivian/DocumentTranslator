@@ -37,7 +37,10 @@ class DocumentProcessor:
 
             return self.translator.translate(image_text)
 
-    def extract_all_text(self):
+
+
+# todo: Just for debugging --> Remove it Later
+    def print_all_text(self):
         for page_number in range(self.n_pages):   
             print(self.translate_image(page_number))
             print(self.translate_page(page_number) )           
