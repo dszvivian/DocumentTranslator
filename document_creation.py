@@ -21,35 +21,6 @@ class DocumentCreation(DocumentProcessor):
                                   height = page.rect.height
                                   ) 
 
-            # Process Images
-            image_list = page.get_images(full=True)
-
-            # for img_index, img in enumerate(image_list):
-
-            #     # xref = img[0]
-            #     # base_image = self.doc.extract_image(xref)
-
-            #     print("    ------------------     ")
-
-
-            #     xref = img[0]
-            #     base_image = self.doc.extract_image(xref)
-            #     image_bytes =  base_image["image"]
-
-
-                
-            #     # print(image_bytes)
-
-            #     Image.open(io.BytesIO(image_bytes))
-
-
-            #     print("    ------------------     ")
-            #     break 
-
-
-
-            
-
             # Gets the text blocks and all its meta data in a Dictionary
             for block in page.get_text("dict")["blocks"]:
 
