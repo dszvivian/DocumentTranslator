@@ -26,4 +26,3 @@ class LanguageTranslator:
 
         else:
             return self.translator.translate(text,dest=target_language).text
-            return GoogleTranslator(source='auto', target='de').translate(text)
