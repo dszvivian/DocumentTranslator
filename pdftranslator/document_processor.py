@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 class DocumentProcessor:
 
-    def __init__(self,path):
+    def __init__(self,path:str):
         self.doc = pymupdf.open(path) 
         self.translator = LanguageTranslator() 
         self.ocr_engine = OcrEngine()       

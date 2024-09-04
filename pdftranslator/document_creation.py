@@ -8,7 +8,7 @@ from document_processor import DocumentProcessor
 class DocumentCreation(DocumentProcessor):
     
 
-    def __init__(self,path):
+    def __init__(self,path:str):
         super().__init__(path)
         self.new_doc =  pymupdf.open()
 

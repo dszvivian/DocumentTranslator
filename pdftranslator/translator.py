@@ -7,7 +7,7 @@ class LanguageTranslator:
         self.translator =  Translator()
 
     
-    def translate(self,text,target_language='en'):
+    def translate(self,text:str,target_language='en'):
         
 
         len_text = len(text)
