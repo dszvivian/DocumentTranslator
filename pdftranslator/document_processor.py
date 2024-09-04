@@ -1,7 +1,7 @@
 import io
 import pymupdf
-from ocr_engine import OcrEngine
-from translator import LanguageTranslator
+from pdftranslator.ocr_engine import OcrEngine
+from pdftranslator.translator import LanguageTranslator
 from PIL import Image, ImageDraw, ImageFont
 
 

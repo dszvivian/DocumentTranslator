@@ -84,5 +84,5 @@ class DocumentCreation(DocumentProcessor):
 
 
 
-    def save_new_doc(self):
-        self.new_doc.save('test_translated.pdf')
+    def save_new_doc(self,path:str='test_translated.pdf'):
+        self.new_doc.save(path)

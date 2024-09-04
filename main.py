@@ -1,12 +1,7 @@
-from document_creation import DocumentCreation
-from document_processor import DocumentProcessor
-    
-path = "test.pdf"
-
-doc = DocumentCreation(path)
-doc.process_pages()
-doc.save_new_doc()
+from pdftranslator.document_creation import DocumentCreation
 
 
-
-
+path = 'test.pdf'
+doc_processor =  DocumentCreation(path)
+doc_processor.process_pages()
+doc_processor.save_new_doc(path='test_translated.pdf')
